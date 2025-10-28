@@ -1,0 +1,107 @@
+/* Fundo da página */
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #4b0082, #0f0f0f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Container central */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Caixa de login */
+.login-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
+  width: 360px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+/* Logo */
+.logo {
+  width: 280px;
+
+}
+
+/* Título */
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #1c1c1c;
+  color: white;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border: 2px solid #ff7b00;
+  background-color: #222;
+}
+
+/* Botão de login */
+.btn-login {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff7b00;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #e36b00;
+}
+
+/* Link de cadastro */
+.cadastro {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.cadastro a {
+  color: #00ff90;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cadastro a:hover {
+  text-decoration: underline;
+}

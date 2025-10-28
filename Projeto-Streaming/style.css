@@ -132,17 +132,17 @@ background: linear-gradient(78deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgb
 /* Catálogo */
 .catalogo {
 
-  padding: 40px 20px;
+  padding: 10px 10px;
 }
 
 .catalogo h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filmes {
 
   display: flex;
-  gap: 20px;
+  gap: 30px;
   overflow-x: auto;
 }
 
@@ -152,6 +152,10 @@ background: linear-gradient(78deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgb
   border-radius: 4px;
   transition: transform 0.3s;
   cursor: pointer;
+    border: solid #e48b4c 2px;
+    box-shadow:
+            0 0 10px #e48b4c,
+            0 0 10px #e48b4c inset;
 }
 
 .filme img:hover {
@@ -169,7 +173,7 @@ background: linear-gradient(78deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgb
 .slides {
   display: flex;                        /* coloca as imagens lado a lado */
   transition: transform 0.6s ease;      /* animação suave na troca */
-  gap: 40px;
+  gap: 25px;
   padding: 25px;
 }
 
@@ -182,9 +186,6 @@ background: linear-gradient(78deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgb
   box-shadow:
     0 0 20px #87ba41,
     0 0 20px #87ba41 inset,
-    0 0 20px #87ba41,
-    0 0 20px #87ba41 inset,
-    0 0 20px #87ba41,
     0 0 20px #87ba41 inset;
   border-radius: 10px;
 }

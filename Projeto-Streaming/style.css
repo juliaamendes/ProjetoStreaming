@@ -82,7 +82,7 @@ body {
     background-image: url('telefone.jpg'); /* 👈 Caminho da sua foto */
      background-size: cover;
      background-position: center 30%;
-     padding-left: 20px;
+    padding-left: 20px;
 
   height: 500px;
   display: flex;
@@ -95,7 +95,6 @@ body {
   left: 0;
   width: 60%;
   height: 100%;
-background: #000;
 background: linear-gradient(78deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgba(0, 0, 0, 1) 17%, rgba(135, 186, 65, 0) 69%);
 }
 
@@ -146,10 +145,28 @@ background: linear-gradient(78deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgb
 }
 
 .filmes {
-
   display: flex;
   gap: 30px;
   overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.filmes::-webkit-scrollbar {
+    height: 7px;
+}
+
+.filmes::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.filmes:hover::-webkit-scrollbar-thumb {
+    background: rgb(91, 0, 128);
+}
+
+.filmes::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .filme img {
@@ -233,3 +250,4 @@ button {
 <!---tela de login -->
 
 
+ 

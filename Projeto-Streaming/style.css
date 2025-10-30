@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
    background: #000000;
-   background: linear-gradient(288deg, rgba(0, 0, 0, 1) 0%, rgba(175, 84, 214, 0.75) 86%, rgba(160, 73, 197, 1) 89%);
+   background: linear-gradient(288deg, rgba(0, 0, 0, 1) 0%, rgb(75, 0, 130) 86%, rgb(75, 0, 130) 89%);
   padding: 10px;
   position: sticky;
   border-radius: 0PX 10PX 0PX 10PX;

@@ -70,12 +70,6 @@
   <section class="catalogo">
     <h2>Recomendados para você</h2>
     <div class="filmes">
-        <div class="filme" data-id="1" data-titulo="O Telefone Preto" data-img="imgFilme">
-            <img src="imagens/telefone-preto.jpg" alt="O Telefone Preto">
-            <h3>O Telefone Preto</h3>
-            <button class="btn-favorito">⭐</button>
-        </div>
-
         <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mVQ8Lb7FhQXPqkQv0QCNbEwp9a6.jpg"></div>
       <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/cJj2gYzkPFSqYGGOhfLgeANlXkB.jpg" alt=""></div>
       <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/8vmYMcvWaqqhEWt9EnTPdXDdy2F.jpg" alt=""></div>
@@ -88,7 +82,7 @@
       <br><br>
     <h2>Terror Psicologico</h2>
     <div class="filmes">
-    <div class="filme"><img src="imgFilmes/iluminado.jpg"></div>
+    <div class="filme"><img src="imgFilmes/iluminado.jpg"><a href="https://www.youtube.com/embed/dSQ3yN5yJ0g?si=ExQHRxB1owV5iGzt%22"></a></div>
       <div class="filme"><img src="imgFilmes/hereditário.jpg" ></div>
       <div class="filme"><img src="imgFilmes/corra.jpg" ></div>
       <div class="filme"><img src="imgFilmes/babadook.jpg" ></div>
@@ -156,6 +150,16 @@
           <div class="filme"><img src="imgFilmes/jogosMortais.jpg"></div>
       </div>
   </section>
+
+  <div id="trailer-modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe id="trailer-frame" width="800" height="450"
+                  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+      </div>
+  </div>
+
 
   <script src="script.js"></script>
 </body>

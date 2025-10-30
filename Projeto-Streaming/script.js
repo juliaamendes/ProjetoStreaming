@@ -64,4 +64,34 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+const modal = document.getElementById("trailer-modal");
+const iframe = document.getElementById("trailer-frame");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".filme img").forEach(img => {
+    img.addEventListener("click", () => {
+        const nomeArquivo = img.src.split("/").pop();  // Pegando o nome da imagem
+        const trailerUrl = trailers[nomeArquivo];
+
+        if (trailerUrl) {
+            iframe.src = trailerUrl + "?autoplay=1";  // Adicionando autoplay
+            modal.style.display = "flex";  // Mostrando o modal
+        } else {
+            alert("Trailer não disponível");
+        }
+    });
+});
+
+// Fechar o modal
+closeBtn.onclick = () => {
+    modal.style.display = "none";
+    iframe.src = "";  // Limpando o src do iframe para parar o vídeo
+};
+
+window.onclick = (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+        iframe.src = "";  // Limpando o src ao clicar fora do modal
+    }
+};
 

@@ -247,7 +247,82 @@ button {
   right: 0;
 }
 
-<!---tela de login -->
+
+/*traillers*/
+
+/* ==== MODAL DO FILME ==== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #111;
+    color: #fff;
+    border: 2px solid #e48b4c;
+    box-shadow: 0 0 20px #e48b4c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    width: 70%;
+    max-width: 900px;
+}
+
+.modal-content img {
+    width: 250px;
+    border-radius: 10px;
+    border: solid 2px #e48b4c;
+}
+
+.modal-info {
+    flex: 1;
+}
+
+.modal-info button {
+    background: #ff7f42;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-info button:hover {
+    background: #87ba41;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#modal-sinopse {
+    white-space: pre-line; /* permite quebra de linha com \n */
+}
+
+#modal-sinopse::after {
+    content: "";
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
 
 
  

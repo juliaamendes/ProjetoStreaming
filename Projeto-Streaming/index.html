@@ -45,14 +45,16 @@
   <section class="catalogo">
     <h2>Recomendados para você</h2>
     <div class="filmes">
-        <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mVQ8Lb7FhQXPqkQv0QCNbEwp9a6.jpg"></div>
-        <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/cJj2gYzkPFSqYGGOhfLgeANlXkB.jpg" alt=""></div>
-      <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/8vmYMcvWaqqhEWt9EnTPdXDdy2F.jpg" alt=""></div>
-      <div class="filme"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/vz2oBcS23lZ35LmDC7mQqThrg8v.jpg"></div>
-      <div class="filme"><img src="imgFilmes/anabelle.jpg"></div>
-      <div class="filme"><img src="imgFilmes/estranhoMundoDeJack.jpg"></div>
+        <div class="filme"><img src="imgFilmes/Halloween.jpg"></div>
+        <div class="filme"><img src="imgFilmes/oSextoSentido_.jpg" ></div>
+        <div class="filme"><img src="imgFilmes/anabelle.jpg"></div>
+        <div class="filme"><img src="imgFilmes/estranhoMundoDeJack.jpg"></div>
         <div class="filme"><img src="imgFilmes/Panico2.jpg"></div>
         <div class="filme"><img src="imgFilmes/Nefarious.jpg"></div>
+        <div class="filme"><img src="imgFilmes/noiteDosMortosVivos.jpg" ></div>
+        <div class="filme"><img src="imgFilmes/jogosMortais.jpg"></div>
+        <div class="filme"><img src="imgFilmes/It.jpg"></div>
+
     </div>
     
 
@@ -60,7 +62,7 @@
     <h2>Terror Psicologico</h2>
     <div class="filmes">
     <div class="filme"><img src="imgFilmes/iluminado.jpg"><a href="https://www.youtube.com/embed/dSQ3yN5yJ0g?si=ExQHRxB1owV5iGzt%22"></a></div>
-    <div class="filme"><img src="imgFilmes/hereditário.jpg" ></div>
+    <div class="filme"><img src="imgFilmes/hereditario.jpg" ></div>
     <div class="filme"><img src="imgFilmes/corra.jpg" ></div>
     <div class="filme"><img src="imgFilmes/babadook.jpg" ></div>
     <div class="filme"><img src="imgFilmes/fragmentado.jpg"></div>
@@ -136,15 +138,21 @@
       </div>
   </section>
 
-  <div id="trailer-modal" class="modal">
+
+  <!-- Modal do Filme -->
+  <div id="filme-modal" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
-          <iframe id="trailer-frame" width="800" height="450"
-                  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-          </iframe>
+          <img id="modal-poster" src="" alt="Poster do filme">
+          <div class="modal-info">
+              <h2 id="modal-titulo"></h2>
+              <p id="modal-sinopse"></p>
+              <a id="modal-trailer" href="#" target="_blank">
+                  <button>🎬 Ver Trailer</button>
+              </a>
+          </div>
       </div>
   </div>
-
 
   <script src="script.js"></script>
 </body>

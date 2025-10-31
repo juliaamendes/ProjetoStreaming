@@ -220,10 +220,21 @@ window.onclick = (e) => { if (e.target === modalFilme) modalFilme.style.display 
 // Exemplo de interação simples
 
 
-document.querySelectorAll('.filme img').forEach(img => {
-  img.addEventListener('click', () => {
-    alert("Faça login para assistir!");
-  });
+//login//
+window.onload = () => {
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+
+    if (!usuarioLogado) {
+        alert('Você precisa estar logado para acessar essa página!');
+        window.location.href = 'login.html'; // redireciona para a página de login
+    }
+};
+// Exemplo de logout
+const btnLogout = document.getElementById('btnLogout');
+
+btnLogout.addEventListener('click', () => {
+    localStorage.removeItem('usuarioLogado');
+    window.location.href = 'login.html'; // redireciona para o login após o logout
 });
 
 const slides = document.querySelector('.slides');
